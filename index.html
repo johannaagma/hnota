@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset = "utf-8" />
         <title>Hnota.is</title>
         <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendors/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="vendors/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/main.css">
     </head>
     <body>
-        <p>Welcome</p>
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" onclick="scrollToDiv()" href="#">Hnota</a>
+                </div>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#" onclick="scrollToDiv('firstSection')">Section 1</a></li>
+                    <li><a href="#" onclick="scrollToDiv('secondSection')">Section 2</a></li>
+                    <li><a href="#" onclick="scrollToDiv('thirdSection')">Section 3</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Top image -->
+        <img class="topImage" src="resources/images/main-image.png" alt="Some image">
+        
+        <!-- First section -->
+        <div id="firstSection" class="container">
+            <div class="col-sm-12">
+                <h1>Design that works.</h1>
+                <p>
+                    We believe that architecture improves lives by finding better solutions to everyday 
+                    problems. We listen carefully to the needs of our collaborators to more deeply understand 
+                    their motivations and goals. We are an architecture and design firm.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Listen</h3>
+                <p>
+                    DWA believes in the fundamental importance of careful listening. Our clients are our 
+                    partners. It’s our job to understand their underlying needs and motivations and 
+                    translate them into design that works.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Understand</h3>
+                <p>
+                    DWA believes that exceptional design is intimately connected to performance, 
+                    practicality, and good results. We take pride in our proficiency. We do not 
+                    propose ideas that will not work.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Deliver</h3>
+                <p>
+                    DWA provides service across every phase of project delivery. We provide detailed planning 
+                    and building tools to help ensure a smooth process at every step. We follow through with 
+                    thoroughness and rigour.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Second section -->
+        <div id="secondSection" class="container">
+            <div class="col-sm-12">
+                <h1>Our portfolio.</h1>
+            </div>
+            <div class="col-sm-3 boxOverlay">
+                <img class="icon" src="resources/images/portfolio/p1.png">
+                <div class="overlay"></div>
+                <div class="hoverText">Text</div>
+            </div>
+            <div class="col-sm-3 boxOverlay">
+                <img class="icon" src="resources/images/portfolio/p2.png">
+                <div class="overlay"></div>
+                <div class="hoverText">Text</div>
+            </div>
+            <div class="col-sm-3 boxOverlay">
+                <img class="icon" src="resources/images/portfolio/p3.png">
+                <div class="overlay"></div>
+                <div class="hoverText">Text</div>
+            </div>
+            <div class="col-sm-3 boxOverlay">
+                <img class="icon" src="resources/images/portfolio/p4.png">
+                <div class="overlay"></div>
+                <div class="hoverText">Text</div>
+            </div>
+            <div class="col-sm-3 boxOverlay">
+                <img class="icon" src="resources/images/portfolio/p5.png">
+                <div class="overlay"></div>
+                <div class="hoverText">Text</div>
+            </div>
+            <div class="col-sm-3 boxOverlay">
+                <img class="icon" src="resources/images/portfolio/p6.png">
+                <div class="overlay"></div>
+                <div class="hoverText">Text</div>
+            </div>
+        </div>
+
+        <!-- Third section -->
+        <div id="thirdSection" class="container">
+            <div class="col-sm-12">
+                <h1>Design that works.</h1>
+                <p>
+                    We believe that architecture improves lives by finding better solutions to everyday 
+                    problems. We listen carefully to the needs of our collaborators to more deeply understand 
+                    their motivations and goals. We are an architecture and design firm.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Listen</h3>
+                <p>
+                    DWA believes in the fundamental importance of careful listening. Our clients are our 
+                    partners. It’s our job to understand their underlying needs and motivations and 
+                    translate them into design that works.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Understand</h3>
+                <p>
+                    DWA believes that exceptional design is intimately connected to performance, 
+                    practicality, and good results. We take pride in our proficiency. We do not 
+                    propose ideas that will not work.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>We Deliver</h3>
+                <p>
+                    DWA provides service across every phase of project delivery. We provide detailed planning 
+                    and building tools to help ensure a smooth process at every step. We follow through with 
+                    thoroughness and rigour.
+                </p>
+            </div>
+        </div>
+
+        <div id="thirdSection" class="container" style="height: 500px;"></div>
+
+         <script src="resources/js/navbar-script.js"></script>
     </body>
 </html>

@@ -1,0 +1,64 @@
+.navbar.navbar-fixed-top {
+    background: rgba(230, 230, 230, 0.9);
+}
+
+img.topImage {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.boxOverlay {
+    padding: 0; /*TODO: 15px;*/
+}
+
+img.icon {
+    width: 100%;
+}
+
+div.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray;
+}
+
+div.hoverText {
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.boxOverlay:hover div.overlay {
+  opacity: 0.5;
+}
+
+.boxOverlay:hover div.hoverText {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
